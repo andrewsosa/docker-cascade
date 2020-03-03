@@ -1,0 +1,8 @@
+image1:
+    docker build -t my/image1:{{ version }} ./images/
+
+image2:
+    docker-compose build service2
+
+image3: image1 image2
+    docker build -t

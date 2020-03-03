@@ -1,0 +1,27 @@
+base:
+  from: "python:3.7"
+  build:
+    context: "./tests/dockerfiles"
+    dockerfile: "./tests/dockerfiles/base"
+  tags:
+    - "cascade/base:3.7"
+# node1:
+#   from: base
+#   build: "./tests/dockerfiles/node"
+#   tags:
+#     - "cascade/node1"
+# node2:
+#   from: base
+#   build: "./tests/dockerfiles/node"
+#   tags:
+#     - "cascade/node2"
+# node3:
+#   from: node2
+#   build: "./tests/dockerfiles/node"
+#   tags:
+#     - "cascade/node3"
+# node4:
+#   from: node2
+#   build: "./tests/dockerfiles/node"
+#   tags:
+#     - "cascade/node4"
